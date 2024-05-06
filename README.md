@@ -1,28 +1,37 @@
 <p align="center">
-<img src="https://place-hold.it/600x200" alt="Place Holder Image"/>
-<!-- <img src="assets/logo.svg" alt="Logo Text There" /> -->
+<img src="assets/elastix-logo.png" alt="Elastix Logo" />
 </p>
 
-# Project Title
-"[Project Name]" involves [briefly describe the main objective or purpose of the project] utilizing [mention any specific tools, technologies, or platforms]. This project aims to [mention the primary goal or outcome] to [highlight the intended impact or benefit].
+# PBX Deployment for General Contractor
+Deployed Elastix PBX to replace a Centrex system significantly reducing PSTN costs for the business. The implementation provided the contractor with IVR, call routing, and voicemail features enabling them to manage inquiries seamlessly, optimize operations, and minimize expenses.
 
 ## Environments and Technologies Used
 
-- Item 1
-- Item 2
-- Item 3
+- Elastix ELX-025 IP PBX Appliance
+    - 1U rack mountable chassis IP PBX 
+        - 1.8GHz CPU 
+        - 1 GB RAM 
+        - 250GB HDD
+- Grandstream GXP2120
+- Callcentric Internet Phone Service
 
 ## Operating Systems Used
 
-- Operating System Name
+- Elastix 2.4
 
 ## High-Level Deployment and Configuration Steps
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
-- Step 5
+- Access the Elastix web interface using the default user name and password
+- Change the admin password in System | User Management
+- Configure the IP address, subnet mask, default gateway, and DNS settings in System | Network
+- Add SIP extensions for each user or device that needs to connect to the system in PBX | Extensions
+   - Configure extension settings such as name, number, password, and voicemail options
+   - Configure IP phones with the defined extension settings
+- Add SIP trunks to external VoIP providers or PSTN gateways in PBX | Trunks
+   - Configure trunk settings such as provider details, authentication, and dialing rules.
+- Create inbound routes to specify how incoming calls are routed based on DID in PBX | Inbound Routes
+- Create outbound routes to specify which trunk to use for each route in PBX | Outbound Routes
+- Configure IVR, Ring Groups, Follow Me, and IVR features
 
 <h2>Architecture Diagram</h2>
 
