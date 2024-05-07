@@ -13,6 +13,7 @@ Deployed Elastix PBX to replace a Centrex system significantly reducing PSTN cos
         - 1 GB RAM 
         - 250GB HDD
 - Grandstream GXP2120
+- Cisco SPA122 ATA
 - Callcentric Internet Phone Service
 
 ## Operating Systems Used
@@ -27,11 +28,18 @@ Deployed Elastix PBX to replace a Centrex system significantly reducing PSTN cos
 - Add SIP extensions for each user or device that needs to connect to the system in PBX | Extensions
    - Configure extension settings such as name, number, password, and voicemail options
    - Configure IP phones with the defined extension settings
+   - Configure the ATA to facilitate fax machine connectivity
 - Add SIP trunks to external VoIP providers or PSTN gateways in PBX | Trunks
    - Configure trunk settings such as provider details, authentication, and dialing rules.
 - Create inbound routes to specify how incoming calls are routed based on DID in PBX | Inbound Routes
 - Create outbound routes to specify which trunk to use for each route in PBX | Outbound Routes
 - Configure IVR, Ring Groups, Follow Me, and IVR features
+
+
+
+
+
+
 
 <h2>Architecture Diagram</h2>
 
