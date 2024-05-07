@@ -35,12 +35,6 @@ Deployed Elastix PBX to replace a Centrex system significantly reducing PSTN cos
 - Create outbound routes to specify which trunk to use for each route in PBX | Outbound Routes
 - Configure IVR, Ring Groups, Follow Me, and IVR features
 
-
-
-
-
-
-
 <h2>Architecture Diagram</h2>
 
 <p>
